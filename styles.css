@@ -1,10 +1,7 @@
-/* Importa a fonte Chakra Petch do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
 /* Estiliza o corpo da página */
 body {
-    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
-    background-color: #acacac; /* Cor de fundo da página */
+    font-family: "Roboto", sans-serif; /* Fonte moderna e legível */
+    background-color: #0A1128; /* Azul escuro vibrante para o fundo */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -16,10 +13,21 @@ body {
 
 /* Estiliza os títulos h1 */
 h1 {
-    font-size: 2.5rem; /* Tamanho da fonte */
-    color: #000000; /* Cor do texto */
+    font-size: 3rem; /* Tamanho grande da fonte */
+    color: #FFD700; /* Dourado vibrante para o texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    animation: glow 2s infinite alternate; /* Animação de brilho */
+}
+
+/* Animação de brilho */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #FFD700, 0 0 20px #FF4500, 0 0 30px #FF4500, 0 0 40px #FFD700;
+    }
+    100% {
+        text-shadow: 0 0 20px #FFD700, 0 0 30px #FF4500, 0 0 40px #FFD700, 0 0 50px #FF4500;
+    }
 }
 
 /* Estiliza as seções da página */
@@ -28,6 +36,10 @@ section {
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+    background-color: #001F54; /* Fundo azul vibrante para seções */
+    padding: 2rem; /* Espaçamento interno */
+    border-radius: 1rem; /* Borda arredondada */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
 }
 
 /* Estiliza os inputs dentro das seções */
@@ -37,26 +49,35 @@ section input {
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
     margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
-    color: #45474B; /* Cor do texto */
-    font-size: 1rem; /* Tamanho da fonte */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
+    color: #FF4500; /* Cor vibrante para o texto */
+    background-color: #FFDD00; /* Fundo amarelo vibrante */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+/* Efeito hover nos inputs */
+section input:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho ao passar o mouse */
 }
 
 /* Estiliza os botões dentro das seções */
 section button {
-    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    padding: 1rem 2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
-    border-radius: 1.5rem; /* Borda arredondada */
-    background-color: #30475E; /* Cor de fundo do botão */
-    color: #F5F7F8; /* Cor do texto do botão */
-    font-size: 1rem; /* Tamanho da fonte */
+    border-radius: 2rem; /* Borda arredondada */
+    background-color: #FF4500; /* Fundo vermelho vibrante */
+    color: #FFFFFF; /* Cor do texto do botão */
+    font-size: 1.2rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
 }
 
-/* Adiciona efeito hover ao botão de pesquisa */
+/* Adiciona efeito hover ao botão */
 section button:hover {
-    background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+    background-color: #FFD700; /* Muda a cor de fundo ao passar o mouse */
+    transform: translateY(-5px); /* Levanta levemente o botão */
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
@@ -64,103 +85,123 @@ section button:hover {
     width: 60rem; /* Largura máxima da caixa de resultados */
     height: 46vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    margin-top: 1.5rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
-    border-radius: 0.6rem; /* Borda arredondada */
+    border-radius: 1rem; /* Borda arredondada */
+    background-color: #FFD700; /* Fundo dourado vibrante */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    animation: bounce 1.5s infinite; /* Animação de "pulsar" */
+}
+
+/* Animação de "pulsar" */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 /* Estiliza cada item de resultado */
 .item-resultado {
-    background: #FFFFFF; /* Cor de fundo dos itens */
-    border-radius: 0.6rem; /* Borda arredondada */
+    background: #FF4500; /* Fundo vermelho vibrante para os itens */
+    border-radius: 1rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+/* Efeito hover nos itens de resultado */
+.item-resultado:hover {
+    transform: translateY(-5px); /* Levanta levemente o item ao passar o mouse */
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
-    font-size: 1.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    font-size: 1.6rem; /* Tamanho da fonte */
+    color: #FFFFFF; /* Cor do texto */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: #30475E; /* Cor do texto dos links */
+    color: #FFD700; /* Cor dourada para os links */
 }
 
-/* Estiliza os links quando são passados o mouse sobre */
+/* Estiliza os links ao passar o mouse */
 .item-resultado a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #45474B; /* Cor do texto */
+    color: #FFFFFF; /* Cor branca para o texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
+    font-family: "Orbitron", sans-serif; /* Fonte chamativa */
+    font-size: 1rem; /* Tamanho da fonte */
 }
+
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #F5F7F8; /* Cor de fundo do rodapé */
-    color: #45474B; /* Cor do texto */
+    background-color: #FF4500; /* Fundo vermelho vibrante para o rodapé */
+    color: #FFFFFF; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
-    padding: 0; /* Espaçamento interno */
+    padding: 0.8rem 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
     position: absolute; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
 }
 
+/* Responsividade para tablets */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem; /* Tamanho da fonte em telas menores */
-        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+        font-size: 2.2rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras */
     }
 
     section input {
-        width: 25rem; /* Largura dos inputs em telas menores */
-        padding: 0.8rem; /* Espaçamento interno em telas menores */
+        width: 24rem; /* Largura dos inputs em telas menores */
     }
 
     .resultados-pesquisa {
-        width: 40rem; /* Largura da caixa de resultados em telas menores */
-        height: 40vh; /* Altura da caixa de resultados em telas menores */
+        width: 90%; /* Largura da caixa de resultados em telas menores */
     }
 
     .item-resultado h2 {
-        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+        font-size: 1.3rem; /* Tamanho da fonte dos títulos */
     }
 }
 
 /* Responsividade para celulares */
 @media (max-width: 480px) {
-
     h1 {
         font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
-        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras */
     }
 
     section input {
-        width: 17rem; /* Largura total dos inputs em telas pequenas */
+        width: 16rem; /* Largura total dos inputs em telas pequenas */
     }
 
     section button {
-        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
-        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+        padding: 0.7rem 1.2rem; /* Espaçamento interno do botão */
+        font-size: 1rem; /* Tamanho da fonte do botão */
     }
 
     .resultados-pesquisa {
         width: 90%; /* Largura da caixa de resultados em telas pequenas */
-        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
     }
 
     .item-resultado h2 {
-        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos */
     }
 
     footer {
-        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé */
     }
+    
 }
