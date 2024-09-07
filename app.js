@@ -1,3 +1,6 @@
+
+alert("Bem vindos, escolha entre DPS - Healer - Tank!")
+
 function pesquisar() {
     // Obtém a seção onde os resultados da pesquisa serão exibidos
     let section = document.getElementById("resultados-pesquisa");
