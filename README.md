@@ -4,7 +4,7 @@
 
 Quer saber tudo sobre as classes de World of Warcraft? Essa ferramenta é perfeita para você! Com ela, você pode:
 
-* **Pesquisar** qualquer classe de WoW que quiser, seja pelo nome ou por uma habilidade.
+* **Pesquisar** qualquer classe de WoW que quiser, seja pelo nome ou por uma função.
 * **Descobrir** detalhes sobre as habilidades, especializações e história de cada classe.
 * **Mergulhar** no universo de Azeroth com links diretos para mais informações.
 
