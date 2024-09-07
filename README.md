@@ -1,4 +1,4 @@
-## Seu Guia Rápido para as Classes de WoW!** ⚔️
+## Seu Guia Rápido para as Classes de WoW! ⚔️
 
 ### **O que faz essa aplicação?**
 
