@@ -34,20 +34,3 @@ Essa aplicação foi feita com muito carinho para todos os fãs de World of Warc
 
 **#WoW #WorldofWarcraft #classesWoW #javascript #html #css**
 
-**[Adicione aqui um GIF ou imagem divertida relacionada a WoW]**
-
-**Observações:**
-
-* **[seu-repositório]**: Substitua por link do seu repositório no GitHub.
-* **Personalize:** Adapte o README para refletir sua personalidade e o estilo do seu projeto.
-* **Adicione mais detalhes:** Inclua informações sobre como configurar o ambiente de desenvolvimento, como executar testes, etc., se aplicável.
-
-**Dicas extras:**
-
-* Use emojis para deixar o README mais divertido e fácil de ler.
-* Adicione badges para mostrar as tecnologias utilizadas, licença, etc.
-* Crie um guia de contribuição para facilitar a colaboração de outros desenvolvedores.
-
-Com esse README, você terá um guia completo e informativo para sua aplicação, atraindo mais usuários e colaboradores.
-
-**Lembre-se:** O mais importante é que o README seja claro, conciso e divertido!
