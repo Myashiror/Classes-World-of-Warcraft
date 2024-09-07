@@ -15,7 +15,7 @@ let dados = [
             titulo: "Paladino",
             descrição: "O Paladino em World of Warcraft é um guerreiro sagrado que combina força física e poder divino. Ele pode ser um tanque (Protetor), curador (Sagrado) ou DPS (Retribuição), usando a Luz para curar aliados e ferir inimigos.",
             link: "https://www.wowhead.com/pt/guide/classes/paladin/retribution/overview-pve-dps",
-            tags:["sagrado", "luz", "dps", "justiça", "curador", "healer", "cruzado", "aura", "proteção", "heal", "retalho"]
+            tags:["sagrado", "luz", "tank", "dps", "justiça", "curador", "healer", "cruzado", "aura", "proteção", "heal", "retalho"]
         },
         {
             titulo: "Mago",
@@ -45,7 +45,7 @@ let dados = [
             titulo: "Guerreiro",
             descrição: "Guerreiros são uma classe muito poderosa, com uma considerável habilidade de ser tanque ou causar dano corpo-a-corpo. A árvore de talentos Proteção contém muitos talentos para aprimorar sua sobrevivência e gerar threat contra monstros. Guerreiros de Proteção são um dos principais e clássicos tanques do jogo.",
             link: "https://www.wowhead.com/pt/class=1/guerreiro",
-            tags:["War", "arms", "armadura", "dps", "fury", "tanque", "DPS", "corpo a corpo",]
+            tags:["War", "arms", "tank", "armadura", "dps", "fury", "tanque", "DPS", "corpo a corpo",]
         },
         {
             titulo: "Cavaleiro da Morte",
@@ -57,7 +57,7 @@ let dados = [
             titulo: "Caçador de Demônios",
             descrição: "Os Caçadores de Demônios, discípulos de Illidan Stormrage, defendem um legado sombrio, que assusta tanto seus aliados quanto seus inimigos. Os Illidari adotam magias vis e caóticas energias que há muito ameaçam o mundo de Azeroth acreditando que são necessárias para desafiar a Legião Ardente. Utilizando os poderes dos demônios que mataram, eles desenvolvem características demoníacas que incitam repulsa e pavor em seus companheiros elfos.",
             link: "https://www.wowhead.com/pt/class=12/caçador-de-demônios",
-            tags:["Dh", "demônio", "caos", "dps", "energia vil", "metamorfose", "corpo a corpo", "mobilidade",]
+            tags:["Dh", "demônio", "caos", "tank", "tanque", "dps", "energia vil", "metamorfose", "corpo a corpo", "mobilidade",]
         },
         {
             titulo: "Xamã",
@@ -69,7 +69,7 @@ let dados = [
             titulo: "Druida",
             descrição: "Druida é a classe “faz tudo” do World of Warcraft -- são capazes de cumprir uma variedade de papeis e por isso tem um dos mais variados estilos de jogo. Um druida pode curar, bater corpo a corpo, bater à distância ou segurar inimigos, utilizando uma variedade de formas de metamorfose. A medida que o druida aumenta seu nível, o jogador é capaz de aprender novas e mais poderosas formas as quais ele/ela pode conjurar para se transformar em diferentes criaturas para cumprir seus papeis.",
             link: "https://www.wowhead.com/pt/class=11/druida",
-            tags:["Druid", "natureza", "transformação", "cura", "tanque", "DPS", "equilíbrio", "stealth", "heal", "curador", "healer", "Feral",]
+            tags:["Druid", "natureza", "transformação", "tank", "tanque", "cura", "tanque", "DPS", "equilíbrio", "stealth", "heal", "curador", "healer", "Feral",]
         },
         {
             titulo: "Conjurante",
