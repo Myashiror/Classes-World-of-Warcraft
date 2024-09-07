@@ -51,7 +51,7 @@ section input {
     border-radius: 1.5rem; /* Borda arredondada */
     margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
     color: #ffffff; /* Cor vibrante para o texto */
-    background-color: #ffffff15; /* Fundo amarelo vibrante */
+    background-color: #00000085; /* Fundo amarelo vibrante */
     font-size: 1.1rem; /* Tamanho da fonte */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
     transition: transform 0.3s ease; /* Adiciona uma transição suave */
@@ -143,7 +143,7 @@ section button:hover {
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #00d9ff75; /* Fundo vermelho vibrante para o rodapé */
+    background-color: #00d9ff00; /* Fundo vermelho vibrante para o rodapé */
     color: #FFFFFF; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     padding: 0.8rem 0; /* Espaçamento interno */
