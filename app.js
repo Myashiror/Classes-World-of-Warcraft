@@ -9,7 +9,7 @@ let campoPesquisa = document.getElementById("campo-pesquisa").value
 
 // Se campoPesquisa for uma string sem nada
 if (!campoPesquisa) {
-    section.innerHTML = "<p> Nada foi encontrado. Você não buscou por um classe relacionada a função</p>"
+    section.innerHTML = "<p> Nada foi encontrado. Você não buscou por uma classe relacionada a função</p>"
     return
 } 
 
