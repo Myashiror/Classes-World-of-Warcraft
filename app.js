@@ -7,9 +7,10 @@ function pesquisar() {
    
 let campoPesquisa = document.getElementById("campo-pesquisa").value 
 
+
 // Se campoPesquisa for uma string sem nada
 if (!campoPesquisa) {
-    section.innerHTML = "<p> Nada foi encontrado. Você não buscou por uma classe relacionada a função</p>"
+    section.innerHTML = "<p> Nada foi encontrado. Você não buscou por uma classe ou função</p>"
     return
 } 
 
@@ -51,7 +52,7 @@ campoPesquisa = campoPesquisa.toLowerCase()
     }
 
     if (!resultados) {
-        resultados = "<p>Nada foi encontrado</p>"
+        resultados = "<p>Nada foi encontrado. Você não buscou por uma classe ou função</p>"
     }
 
     // Atribui os resultados gerados ao conteúdo da seção

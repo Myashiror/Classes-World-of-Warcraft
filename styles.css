@@ -81,16 +81,16 @@ section button:hover {
     transform: translateY(-5px); /* Levanta levemente o botão */
 }
 
-/* Estiliza a caixa de resultados da pesquisa */
+/* ---------------------------Estilizar a caixa de resultados das classes */
 .resultados-pesquisa {
-    width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
-    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    width: 50rem; /* Largura máxima da caixa de resultados */
+    height: 40vh; /* Altura máxima da caixa de resultados */
+    overflow-y: scroll; /* Adiciona rolagem vertical se necessário */
     margin-top: 1.5rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1rem; /* Borda arredondada */
     background-color: #ffd90000; /* Fundo dourado vibrante */
-    animation: bounce 1.5s infinite; /* Animação de "pulsar" */
+    animation: bounce 4.1s infinite; /* Animação de "pulsar" */
 }
 
 /* Animação de "pulsar" */
@@ -115,7 +115,7 @@ section button:hover {
 
 /* Efeito hover nos itens de resultado */
 .item-resultado:hover {
-    transform: translateY(-5px); /* Levanta levemente o item ao passar o mouse */
+    transform: translateY(-8px); /* Levanta levemente o item ao passar o mouse */
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
